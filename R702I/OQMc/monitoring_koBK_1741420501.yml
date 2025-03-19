@@ -5,7 +5,6 @@ changelogPolicy: auto
 statusProvider:
   name: github
   config:
-    contexts:
       - 'self-hosted'
 artifactProvider:
   name: none
