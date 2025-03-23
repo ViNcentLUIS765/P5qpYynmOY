@@ -23,7 +23,6 @@ Once you feel more confident you can [jump to any of our other Otto robots](http
 If you noticed we have @divided our documenation in [Wikifactory](https://wikifactory.com/+OttoDIY/projects) and [Github](https://github.com/OttoDIY/), this is because one tool is good for hardware the other for merely software, we also find out that one is easier to use for our main community audience but feel free to use any you feel comfortable with, currently we need support with:
 
 * New Remixes or designs of similar robots you can just upload into Wikifactory Otto DIY projects [submit any creation you have made here](https://wikifactory.com/new-project) they help show the projects possibility and community collaboration.
-* Language [translations for our Otto Blockly](https://github.com/OttoDIY/blockly) with this more people will learn how to code.
 * In the same repository you can help us report issues or solve them or pull request other improvements.
 * Ideas or [improvements for our mobile App!](https://github.com/OttoDIY/OttoDIYApp)
 
