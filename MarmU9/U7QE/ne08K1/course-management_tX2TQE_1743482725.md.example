@@ -1,7 +1,6 @@
 # =============================
 # Email config
 
-# For development or quick testing use console as the email backend
 EMAIL_BACKEND="django.core.mail.backends.console.EmailBackend"
 # For production use smtp, uncomment the below variable
 # EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
