@@ -136,7 +136,6 @@
   - One of the easiest ways of preventing the loss of data is to simply not collect it
   - The **data collection guideline**: if the data doesn't have a clear purpose for use, don't collect it, and don't store it; this is why many privacy regulations mention limiting data collection
 - 2.4.3 Data location
-  - **Data location**: in this context, refers to the location of data backups or data copies
   - If a company's system is on-prem, keeps data on-site, but regularly backups up data, best practice is to keep a backup copy on site and backup copy off-site
   - Consider distance between data/storage locations to mitigate potential mutual (primary and backup) damage risk
 
