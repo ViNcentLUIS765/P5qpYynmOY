@@ -1,0 +1,105 @@
+version: 2
+
+builds:
+  - id: flowpipe-linux-arm64
+    binary: flowpipe
+    goos:
+      - linux
+    goarch:
+      - arm64
+
+    env:
+      - CC=aarch64-linux-gnu-gcc
+      - CXX=aarch64-linux-gnu-g++
+
+    # Custom ldflags.
+    #
+    # Default: '-s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.Date}} -X main.builtBy=goreleaser'
+    # Templates: allowed
+    ldflags:
+      # Go Releaser analyzes your Git repository and identifies the most recent Git tag (typically the highest version number) as the version for your release.
+      # This is how it determines the value of {{.Version}}.
+      - -s -w -X main.version={{.Version}} -X version.buildTime={{.Date}} -X version.commit={{.Commit}} -X version.builtBy=goreleaser
+
+  - id: flowpipe-linux-amd64
+    binary: flowpipe
+    goos:
+      - linux
+    goarch:
+      - amd64
+
+    env:
+      - CC=x86_64-linux-gnu-gcc
+      - CXX=x86_64-linux-gnu-g++
+
+    ldflags:
+      - -s -w -X main.version={{.Version}} -X version.buildTime={{.Date}} -X version.commit={{.Commit}} -X version.builtBy=goreleaser
+
+  - id: flowpipe-darwin-arm64
+    binary: flowpipe
+    goos:
+      - darwin
+    goarch:
+      - arm64
+
+    env:
+      - CC=oa64-clang
+      - CXX=oa64-clang++
+
+    ldflags:
+      - -s -w -X main.version={{.Version}} -X version.buildTime={{.Date}} -X version.commit={{.Commit}} -X version.builtBy=goreleaser
+
+  - id: flowpipe-darwin-amd64
+    binary: flowpipe
+    goos:
+      - darwin
+    goarch:
+      - amd64
+
+    env:
+      - CC=o64-clang
+      - CXX=o64-clang++
+
+    ldflags:
+      - -s -w -X main.version={{.Version}} -X version.buildTime={{.Date}} -X version.commit={{.Commit}} -X version.builtBy=goreleaser
+
+release:
+  # Always set as pre-release. Publishing release must be done manually.
+  prerelease: true
+
+archives:
+  - id: homebrew
+    format: tar.gz
+    name_template: "{{ .ProjectName }}.{{ .Os }}.{{ .Arch }}"
+    files:
+      - none*
+
+checksum:
+  name_template: 'checksums.txt'
+
+snapshot:
+  name_template: "{{ incpatch .Version }}-next"
+
+changelog:
+  disable: true
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+
+brews:
+  - ids:
+      - homebrew
+    name: flowpipe@{{ .Major }}.{{ .Minor }}.{{ .Patch }}
+    repository:
+      owner: turbot
+      name: homebrew-tap
+      branch: flowpipe-brew
+    directory: Formula
+    url_template: "https://github.com/turbot/flowpipe/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    homepage: "https://flowpipe.io/"
+    description: "Flowpipe is a cloud scripting engine. Automation and workflow to connect your clouds to the people, systems and data that matters."
+    skip_upload: auto
+    install: |-
+      bin.install "flowpipe"
