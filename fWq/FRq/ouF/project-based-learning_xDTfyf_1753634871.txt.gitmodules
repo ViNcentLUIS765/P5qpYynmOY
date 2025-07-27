@@ -1,0 +1,87 @@
+[submodule "eBPF_Hub/template"]
+	path = eBPF_Hub/template
+	url = https://github.com/eunomia-bpf/ebpm-template
+[submodule "eBPF_Supermarket/Network_Subsystem/libbpf-bootstrap"]
+	path = eBPF_Supermarket/Network_Subsystem/libbpf-bootstrap
+	url = https://github.com/libbpf/libbpf-bootstrap
+[submodule "eBPF_Supermarket/XDP_Res-Application/tools/lib/libbpf"]
+	path = eBPF_Supermarket/XDP_Res-Application/tools/lib/libbpf
+	url = https://github.com/libbpf/libbpf.git
+[submodule "eBPF_Supermarket/XDP_Res-Application/tools/lib/xdp-tools"]
+	path = eBPF_Supermarket/XDP_Res-Application/tools/lib/xdp-tools
+	url = https://github.com/xdp-project/xdp-tools.git
+[submodule "eBPF_Supermarket/eBPF_proc_image/libbpf-bootstrap"]
+	path = eBPF_Supermarket/eBPF_proc_image/libbpf-bootstrap
+	url = https://github.com/libbpf/libbpf-bootstrap.git
+[submodule "eBPF_Hub/libbpf-bootstrap-android"]
+	path = eBPF_Hub/libbpf-bootstrap-android
+	url = https://github.com/JiaHuann/libbpf-bootstrap-android
+[submodule "eBPF_Supermarket/CPU_Subsystem/libbpf_sar/libbpf-bootstrap"]
+	path = eBPF_Supermarket/CPU_Subsystem/libbpf_sar/libbpf-bootstrap
+	url = https://github.com/libbpf/libbpf-bootstrap.git
+[submodule "eBPF_Supermarket/eBPF_proc_image/blazesym"]
+	path = eBPF_Supermarket/eBPF_proc_image/blazesym
+	url = https://github.com/libbpf/blazesym.git
+[submodule "eBPF_Supermarket/eBPF_proc_image/bpftool"]
+	path = eBPF_Supermarket/eBPF_proc_image/bpftool
+	url = https://github.com/libbpf/bpftool.git
+[submodule "eBPF_Supermarket/eBPF_proc_image/libbpf"]
+	path = eBPF_Supermarket/eBPF_proc_image/libbpf
+	url = https://github.com/libbpf/libbpf.git
+[submodule "eBPF_Supermarket/CPU_Subsystem/proc_image/blazesym"]
+	path = eBPF_Supermarket/CPU_Subsystem/proc_image/blazesym
+	url = https://github.com/libbpf/blazesym.git
+[submodule "eBPF_Supermarket/CPU_Subsystem/proc_image/bpftool"]
+	path = eBPF_Supermarket/CPU_Subsystem/proc_image/bpftool
+	url = https://github.com/libbpf/bpftool.git
+[submodule "eBPF_Supermarket/CPU_Subsystem/proc_image/libbpf"]
+	path = eBPF_Supermarket/CPU_Subsystem/proc_image/libbpf
+	url = https://github.com/libbpf/libbpf.git
+[submodule "eBPF_Supermarket/CPU_Subsystem/blazesym"]
+	path = eBPF_Supermarket/CPU_Subsystem/blazesym
+	url = https://github.com/libbpf/blazesym.git
+[submodule "eBPF_Supermarket/CPU_Subsystem/bpftool"]
+	path = eBPF_Supermarket/CPU_Subsystem/bpftool
+	url = https://github.com/libbpf/bpftool.git
+[submodule "eBPF_Supermarket/CPU_Subsystem/libbpf"]
+	path = eBPF_Supermarket/CPU_Subsystem/libbpf
+	url = https://github.com/libbpf/libbpf.git
+[submodule "eBPF_Supermarket/Network_Subsystem/net_manager/lib/libbpf"]
+	path = eBPF_Supermarket/Network_Subsystem/net_manager/lib/libbpf
+	url = https://github.com/libbpf/libbpf.git
+[submodule "eBPF_Supermarket/Network_Subsystem/net_manager/lib/xdp-tools"]
+	path = eBPF_Supermarket/Network_Subsystem/net_manager/lib/xdp-tools
+	url = https://github.com/xdp-project/xdp-tools.git
+[submodule "MagicEyes/blazesym"]
+	path = MagicEyes/blazesym
+	url = https://github.com/libbpf/blazesym.git
+[submodule "MagicEyes/bpftool"]
+	path = MagicEyes/bpftool
+	url = https://github.com/libbpf/bpftool.git
+[submodule "MagicEyes/libbpf"]
+	path = MagicEyes/libbpf
+	url = https://github.com/libbpf/libbpf.git
+[submodule "eBPF_Supermarket/Memory_Subsystem/blazesym"]
+	path = eBPF_Supermarket/Memory_Subsystem/blazesym
+	url = https://github.com/libbpf/blazesym.git
+[submodule "eBPF_Supermarket/Memory_Subsystem/libbpf"]
+	path = eBPF_Supermarket/Memory_Subsystem/libbpf
+	url = https://github.com/libbpf/libbpf.git
+[submodule "eBPF_Supermarket/Memory_Subsystem/bpftool"]
+	path = eBPF_Supermarket/Memory_Subsystem/bpftool
+	url = https://github.com/libbpf/bpftool.git
+[submodule "eBPF_Supermarket/lib/bpftool"]
+	path = eBPF_Supermarket/lib/bpftool
+	url = https://github.com/libbpf/bpftool.git
+[submodule "eBPF_Supermarket/lib/libbpf"]
+	path = eBPF_Supermarket/lib/libbpf
+	url = https://github.com/libbpf/libbpf.git
+[submodule "MagicEyes/third_party/fmt"]
+	path = MagicEyes/third_party/fmt
+	url = https://github.com/fmtlib/fmt.git
+[submodule "MagicEyes/third_party/spdlog"]
+	path = MagicEyes/third_party/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "MagicEyes/third_party/argparse"]
+	path = MagicEyes/third_party/argparse
+	url = https://github.com/p-ranav/argparse.git
