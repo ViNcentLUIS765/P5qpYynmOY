@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.alibaba.testable</groupId>
+  <artifactId>testable-aggregate</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>testable-parent</module>
+    <module>testable-processor</module>
+    <module>testable-core</module>
+    <module>testable-agent</module>
+    <module>testable-all</module>
+    <module>testable-maven-plugin</module>
+    <module>demo</module>
+  </modules>
+
+</project>
